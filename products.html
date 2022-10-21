@@ -36,7 +36,42 @@
     <![endif]-->
 
 </head>
-
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?36956';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"150",
+      "marginRight":"30",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"HAMZOU AGROCHEMICAL NIG LTD",
+      "brandSubTitle":"Timely Replies",
+      "brandImg":"https://joe-etubigreatattai.github.io/hamzou/images/logo.png",
+      "welcomeText":"How can we help you?",
+      "messageText":"",
+      "backgroundColor":"#45b419",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"2348065487101"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 <body>
 
     <!-- Start Main Top -->
@@ -61,6 +96,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                         <li class="nav-item active"><a href="products.html" class="nav-link">Products</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact us</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -94,6 +130,7 @@
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active">Products</li>
+                        
                     </ul>
                 </div>
             </div>
