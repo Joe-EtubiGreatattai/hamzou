@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#45b419">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-   
+
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,9 +17,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
     <!-- Site Icons -->
     <link rel="apple-touch-icon" href="images/logo.png">
 
@@ -31,6 +36,53 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide {
+            width: 80%;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            width: 60%;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            width: 40%;
+        }
+    </style>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -45,35 +97,36 @@
     s.async = true;
     s.src = url;
     var options = {
-  "enabled":true,
-  "chatButtonSetting":{
-      "backgroundColor":"#4dc247",
-      "ctaText":"",
-      "borderRadius":"25",
-      "marginLeft":"0",
-      "marginBottom":"150",
-      "marginRight":"30",
-      "position":"right"
-  },
-  "brandSetting":{
-      "brandName":"HAMZOU AGROCHEMICAL NIG LTD",
-      "brandSubTitle":"Timely Replies",
-      "brandImg":"https://joe-etubigreatattai.github.io/hamzou/images/logo.png",
-      "welcomeText":"How can we help you?",
-      "messageText":"",
-      "backgroundColor":"#45b419",
-      "ctaText":"Start Chat",
-      "borderRadius":"25",
-      "autoShow":false,
-      "phoneNumber":"2348065487101"
-  }
-};
-    s.onload = function() {
+        "enabled": true,
+        "chatButtonSetting": {
+            "backgroundColor": "#4dc247",
+            "ctaText": "",
+            "borderRadius": "25",
+            "marginLeft": "0",
+            "marginBottom": "150",
+            "marginRight": "30",
+            "position": "right"
+        },
+        "brandSetting": {
+            "brandName": "HAMZOU AGROCHEMICAL NIG LTD",
+            "brandSubTitle": "Timely Replies",
+            "brandImg": "https://joe-etubigreatattai.github.io/hamzou/images/logo.png",
+            "welcomeText": "How can we help you?",
+            "messageText": "",
+            "backgroundColor": "#45b419",
+            "ctaText": "Start Chat",
+            "borderRadius": "25",
+            "autoShow": false,
+            "phoneNumber": "2348105090106"
+        }
+    };
+    s.onload = function () {
         CreateWhatsappChatWidget(options);
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
 </script>
+
 <body>
     <!-- Start Main Top -->
     <header class="main-header">
@@ -297,60 +350,293 @@
                 </div>
             </div>
         </div>
+
+        <div class="gallary-holder">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video src="images/Hangzhou assets/HangzhouVidoes/vidoe2.mp4" controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="images/Hangzhou assets/HangzhouVidoes/video1.mp4" controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="images/Hangzhou assets/HangzhouVidoes/video3.mp4" controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="images/Hangzhou assets/HangzhouVidoes/video4.mp4" controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video src="images/Hangzhou assets/HangzhouVidoes/vidoe5.mp4" controls></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img9.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img10.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img11.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img12.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img13.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img14.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img15.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img16.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img17.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img18.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img19.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/Hangzhou assets/HangzhouAssets/img20.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
     </div>
     <!-- End Blog  -->
 
     <h2 class="tabel-title">HANGZHOU STATE REPRESENTATIVES</h2>
     <table class="table table-hover">
         <tbody>
-            <tr><td>1.</td><td> WISDOM ITIGWE Head Office Abuja</td><td> 08105090106 08055615925</td></tr>
-            <tr><td>2.</td><td> MICHEAL OCHEME Head Office Abuja</td><td> 08065487101</td></tr>
-            <tr><td>3.</td><td> MR. DANIEL EMENIKE Abia Rep</td><td> 08039718329</td></tr>
-            <tr><td>4.</td><td> CELESTINE AKOR Adamawa State Rep </td><td> 08164549969</td></tr>
-            <tr><td>5.</td><td> DR. AKANME Aka - Ibom State Rep</td><td> 09072667245</td></tr>
-            <tr><td>6.</td><td> MUHAMMED S. ABUBAKAR Bauchi State Rep</td><td> 07030128564</td></tr>
-            <tr><td>7.</td><td> PATRICK UDEH ABU Benue State Rep</td><td> 07038326498</td></tr>
-            <tr><td>8.</td><td> MUTARI MUMUDA Borno Rep</td><td> 07030091366</td></tr>
-            <tr><td>9.</td><td> MICHEAL ABANG OBI Cross River State Re</td><td> 07087132440</td></tr>
-            <tr><td>10.</td><td> JOHN FESTUS Delta State Rep</td><td> 07014042658</td></tr>
-            <tr><td>11.</td><td> OKIKE O. OKIKE Ebonyi State Rep</td><td> 08053391528</td></tr>
-            <tr><td>12.</td><td> ISAH EMMANUEL Edo State Rep</td><td> 08038468410</td></tr>
-            <tr><td>13.</td><td> NNAJI COLLINS CHINEDU Enugu/Anambra St. Rep</td><td> 09017347148</td></tr>
-            <tr><td>14.</td><td> ESSIEN E. UKPABIO Ekiti State Re</td><td> 08034903053</td></tr>
-            <tr><td>15.</td><td>SAMUEL GABRIEL AJANA FCT Rep</td><td> 08067975097</td></tr>
-            <tr><td>16.</td><td> SHEHU MUHAMMAD Gombe State Rep</td><td> 08036354035</td></tr>
-            <tr><td>17.</td><td> DUFU AMOGE Imo State Rep</td><td> 08032694144</td></tr>
-            <tr><td>18.</td><td> ALH. YAHAYA BUBA Jigawa State Rep</td><td> 08171514688</td></tr>
-            <tr><td>19.</td><td> ALH. SHEHU MUHAMMAD Kano North Coord</td><td> 08036354035</td></tr>
-            <tr><td>20.</td><td> JIBRIN SALISU Kaduna State Rep</td><td> 07039064471</td></tr>
-            <tr><td>21.</td><td> ALH. SANI ABUBAKAR D. Kastina State Rep</td><td> 08036293843</td></tr>
-            <tr><td>22.</td><td> ALHASSAN YUSUF L. Kebbi State Rep</td><td> 08026495187</td></tr>
-            <tr><td>23.</td><td> JAMES EKELE A. Kogi State Rep</td><td> 08136819441</td></tr>
-            <tr><td>24.</td><td> EYINADE SAKIRU Kwara State Rep</td><td> 09052249891</td></tr>
-            <tr><td>25.</td><td> MRS. MARGARET ABU Lagos State Rep</td><td> 08082847174</td></tr>
-            <tr><td>26.</td><td> TOBECHI TITUS Nasarawa State Rep</td><td> 08039302552</td></tr>
-            <tr><td>27.</td><td> HASSAN LAK. Niger State Rep</td><td> 08035680921</td></tr>
-            <tr><td>28.</td><td> OLU FASINA GBENGA Ogun State Rep</td><td> 08033378803 +22990439527</td></tr>
-            <tr><td>29.</td><td> ONYINLOYE MICHEAL NIYI Ondo State Rep</td><td> 09067995901</td></tr>
-            <tr><td>30.</td><td> FABUMI OLU FUNKE T. Osun State Re</td><td> 09032050903</td></tr>
-            <tr><td>31.</td><td> SUNDAY AJAH Oyo State Rep</td><td> 07038376332</td></tr>
-            <tr><td>32.</td><td> GABRIEL AGADAGBA D. Plateau State Rep</td><td> 07039443695</td></tr>
-            <tr><td>33.</td><td> EMMANUEL OYISI River State Rep</td><td> 07037688492</td></tr>
-            <tr><td>34.</td><td> UMAR YAKUBU Sokoto State Rep</td><td> 07089398316</td></tr>
-            <tr><td>35.</td><td> JOSEPHINE AKPA Taraba State Re</td><td> 08139715020</td></tr>
-            <tr><td>36.</td><td> NASIR Yua Yobe State Rep</td><td> 08037562113</td></tr>
-            <tr><td>36.</td><td> YAHAYA SALISU GADA Zamfara State Rep</td><td> 08069007417</td></tr>
+            <tr>
+                <td>1.</td>
+                <td> WISDOM ITIGWE Head Office Abuja</td>
+                <td> 08105090106 08055615925</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td> MICHEAL OCHEME Head Office Abuja</td>
+                <td> 08065487101</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td> MR. DANIEL EMENIKE Abia Rep</td>
+                <td> 08039718329</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td> CELESTINE AKOR Adamawa State Rep </td>
+                <td> 08164549969</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td> DR. AKANME Aka - Ibom State Rep</td>
+                <td> 09072667245</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td> MUHAMMED S. ABUBAKAR Bauchi State Rep</td>
+                <td> 07030128564</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td> PATRICK UDEH ABU Benue State Rep</td>
+                <td> 07038326498</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td> MUTARI MUMUDA Borno Rep</td>
+                <td> 07030091366</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td> MICHEAL ABANG OBI Cross River State Re</td>
+                <td> 07087132440</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td> JOHN FESTUS Delta State Rep</td>
+                <td> 07014042658</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td> OKIKE O. OKIKE Ebonyi State Rep</td>
+                <td> 08053391528</td>
+            </tr>
+            <tr>
+                <td>12.</td>
+                <td> ISAH EMMANUEL Edo State Rep</td>
+                <td> 08038468410</td>
+            </tr>
+            <tr>
+                <td>13.</td>
+                <td> NNAJI COLLINS CHINEDU Enugu/Anambra St. Rep</td>
+                <td> 09017347148</td>
+            </tr>
+            <tr>
+                <td>14.</td>
+                <td> ESSIEN E. UKPABIO Ekiti State Re</td>
+                <td> 08034903053</td>
+            </tr>
+            <tr>
+                <td>15.</td>
+                <td>SAMUEL GABRIEL AJANA FCT Rep</td>
+                <td> 08067975097</td>
+            </tr>
+            <tr>
+                <td>16.</td>
+                <td> SHEHU MUHAMMAD Gombe State Rep</td>
+                <td> 08036354035</td>
+            </tr>
+            <tr>
+                <td>17.</td>
+                <td> DUFU AMOGE Imo State Rep</td>
+                <td> 08032694144</td>
+            </tr>
+            <tr>
+                <td>18.</td>
+                <td> ALH. YAHAYA BUBA Jigawa State Rep</td>
+                <td> 08171514688</td>
+            </tr>
+            <tr>
+                <td>19.</td>
+                <td> ALH. SHEHU MUHAMMAD Kano North Coord</td>
+                <td> 08036354035</td>
+            </tr>
+            <tr>
+                <td>20.</td>
+                <td> JIBRIN SALISU Kaduna State Rep</td>
+                <td> 07039064471</td>
+            </tr>
+            <tr>
+                <td>21.</td>
+                <td> ALH. SANI ABUBAKAR D. Kastina State Rep</td>
+                <td> 08036293843</td>
+            </tr>
+            <tr>
+                <td>22.</td>
+                <td> ALHASSAN YUSUF L. Kebbi State Rep</td>
+                <td> 08026495187</td>
+            </tr>
+            <tr>
+                <td>23.</td>
+                <td> JAMES EKELE A. Kogi State Rep</td>
+                <td> 08136819441</td>
+            </tr>
+            <tr>
+                <td>24.</td>
+                <td> EYINADE SAKIRU Kwara State Rep</td>
+                <td> 09052249891</td>
+            </tr>
+            <tr>
+                <td>25.</td>
+                <td> MRS. MARGARET ABU Lagos State Rep</td>
+                <td> 08082847174</td>
+            </tr>
+            <tr>
+                <td>26.</td>
+                <td> TOBECHI TITUS Nasarawa State Rep</td>
+                <td> 08039302552</td>
+            </tr>
+            <tr>
+                <td>27.</td>
+                <td> HASSAN LAK. Niger State Rep</td>
+                <td> 08035680921</td>
+            </tr>
+            <tr>
+                <td>28.</td>
+                <td> OLU FASINA GBENGA Ogun State Rep</td>
+                <td> 08033378803 +22990439527</td>
+            </tr>
+            <tr>
+                <td>29.</td>
+                <td> ONYINLOYE MICHEAL NIYI Ondo State Rep</td>
+                <td> 09067995901</td>
+            </tr>
+            <tr>
+                <td>30.</td>
+                <td> FABUMI OLU FUNKE T. Osun State Re</td>
+                <td> 09032050903</td>
+            </tr>
+            <tr>
+                <td>31.</td>
+                <td> SUNDAY AJAH Oyo State Rep</td>
+                <td> 07038376332</td>
+            </tr>
+            <tr>
+                <td>32.</td>
+                <td> GABRIEL AGADAGBA D. Plateau State Rep</td>
+                <td> 07039443695</td>
+            </tr>
+            <tr>
+                <td>33.</td>
+                <td> EMMANUEL OYISI River State Rep</td>
+                <td> 07037688492</td>
+            </tr>
+            <tr>
+                <td>34.</td>
+                <td> UMAR YAKUBU Sokoto State Rep</td>
+                <td> 07089398316</td>
+            </tr>
+            <tr>
+                <td>35.</td>
+                <td> JOSEPHINE AKPA Taraba State Re</td>
+                <td> 08139715020</td>
+            </tr>
+            <tr>
+                <td>36.</td>
+                <td> NASIR Yua Yobe State Rep</td>
+                <td> 08037562113</td>
+            </tr>
+            <tr>
+                <td>36.</td>
+                <td> YAHAYA SALISU GADA Zamfara State Rep</td>
+                <td> 08069007417</td>
+            </tr>
         </tbody>
-      </table>
-      <!-- Start Instagram Feed  -->
-      <div class="instagram-box">
+    </table>
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
         <div class="main-instagram owl-carousel owl-theme">
             <div class="item">
                 <div class="ins-inner-box">
                     <img src="images/location1.jpg" alt="" />
                 </div>
             </div>
-        
+
             <div class="item">
                 <div class="ins-inner-box">
                     <img src="images/location2.jpg" alt="" />
@@ -374,8 +660,8 @@
         </div>
     </div>
     <!-- End Instagram Feed  -->
-     <!-- Start Footer  -->
-     <footer>
+    <!-- Start Footer  -->
+    <footer>
         <div class="footer-main">
             <div class="container">
 
@@ -411,8 +697,7 @@
                                         Along Kaduna-Lokoja Express Way, Gwagwalada, FCT, Abuja.
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a
-                                            href="tel:08105090106">08105090106,
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:08105090106">08105090106,
                                             <br> 08065487101</a></p>
                                 </li>
                                 <li>
@@ -439,6 +724,20 @@
     <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
     <!-- ALL JS FILES -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
