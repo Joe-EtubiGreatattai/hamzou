@@ -2578,10 +2578,8 @@
      width: 34px;
      text-align: center;
 }
- .share-bar a {
-}
- .featured-products-box{
-}
+
+
  .featured-products-box .owl-nav{
      position: absolute;
      margin: 0 auto;
@@ -2620,32 +2618,18 @@
 	border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .gallary-holder{
     width: 100%;
     height: 80vh;
   }
 
   video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
