@@ -11,7 +11,7 @@ $active=$_POST['active'];
 $date=date("Y/m/d");
 $time=date("h:i:sa");  
 
-	$file="imagefile";
+	$file="file";
 $pic="images/broken.png";		
 $medianame1=basename( $_FILES["$file"]["name"]);
 $mediatemp1=$_FILES["$file"]['tmp_name'];
