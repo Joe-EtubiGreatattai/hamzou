@@ -1,5 +1,5 @@
-<?php
-        
+<?php include'../connect.php';
+
 if(isset($_POST['upload'])) {
 
 $name=$_POST['name'];
