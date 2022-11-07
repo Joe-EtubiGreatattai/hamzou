@@ -3,22 +3,6 @@
 <!-- Basic -->
 
 <head>
-    <!-- render data -->
-    <script>
-       
-    const render= document.getElementById("render");
-    var xhttps= new XMLHttpRequest();
-xhttps.onreadystatechange= function(){
-	if(xhttps.readyState == 4 && xhttps.status == 200){
-document.getElementById(render).innerHTML=xhttps.responseText;
- 
-}
-};
-
-xhttps.open("GET", "fetchdata.php", true);
-xhttps.send();
-
-    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#45b419">
@@ -110,6 +94,7 @@ xhttps.send();
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        </li> <li class="nav-item"><a class="nav-link" href="gallarypage.html">Gallary</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                         <li class="nav-item active"><a href="products.html" class="nav-link">Products</a></li>
                         <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact us</a></li>
@@ -161,9 +146,6 @@ xhttps.send();
                 <div class="col-xl-9 col-lg-9 col-sm-12 col-xs-12 Products-content-right">
                     <div class="right-product-box">
                         <div class="product-item-filter row">
-                          
-                            <span id="render"></span>
-                          
                             <div class="product-categorie-box">
                                 <div class="tab-content">
                                     <div class="row">
@@ -195,7 +177,6 @@ xhttps.send();
                                     </div>
                                 </div>
                             </div>
-
                             <div class="product-categorie-box">
                                 <div class="tab-content">
                                     <div class="row">
@@ -250,7 +231,6 @@ xhttps.send();
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="product-categorie-box">
                                 <div class="tab-content">
                                     <div class="row">
@@ -896,7 +876,7 @@ xhttps.send();
                                     </li>
                                     <li>
                                         <p><i class="fas fa-envelope"></i>Email: <a
-                                                href="info@hainigeria.com">info@hainigeria.com</a></p>
+                                                href="hangzhouagro@163.com">hangzhouagro@163.com</a></p>
                                     </li>
                                 </ul>
                             </div>

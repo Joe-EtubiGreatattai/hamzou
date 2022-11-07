@@ -74,16 +74,11 @@
      </a>
      <br>
      <h1>Product uploader</h1>
-     <form accept-charset="UTF-8" action="uploader.php" method="POST" enctype="multipart/form-data" target="_blank">
+     <form accept-charset="UTF-8" action="https://getform.io/f/{your-form-endpoint-goes-here}" method="POST" enctype="multipart/form-data" target="_blank">
        <div class="form-group">
          <label for="productname">Product Name</label>
-         <input type="text" name="name" class="form-control" id="productname" placeholder="FENNUT" required="required">
+         <input type="text" name="productname" class="form-control" id="productname" placeholder="FENNUT" required="required">
        </div>
-
-       <div class="form-group">
-        <label for="description" required="required">Description</label>
-        <input type="text" name="description" class="form-control" id="description" aria-describedby="emailHelp" placeholder="Short description">
-      </div>
        <div class="form-group">
          <label for="dosage" required="required">Dosage</label>
          <input type="text" name="dosage" class="form-control" id="dosage" aria-describedby="emailHelp" placeholder="at 150-200 gram in 16 lt sprayer">
@@ -91,7 +86,7 @@
 
        <div class="form-group">
         <label for="activeingredient" required="required">Active Ingredient</label>
-        <input type="text" name="active" class="form-control" id="activeingredient" aria-describedby="emailHelp" placeholder="Dicamba 12%">
+        <input type="text" name="activeingredient" class="form-control" id="activeingredient" aria-describedby="emailHelp" placeholder="Dicamba 12%">
       </div>
       <div class="form-group">
         <label for="precaution" required="required">Precaution</label>
@@ -104,7 +99,7 @@
          <input type="file" name="file">
        </div>
        <hr>
-       <button type="submit" name="upload" class="btn btn-primary">Submit</button>
+       <button type="submit" class="btn btn-primary">Submit</button>
      </form>
  </div> 
  
